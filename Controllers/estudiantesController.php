@@ -47,6 +47,9 @@
 					$this->estudiante->set('imagen', $nombre);
 					$this->estudiante->set('id_seccion', $_POST['id_seccion']);
 					$this->estudiante->add();
+
+					session_start();
+					$_SESSION['done'] = true; 
 					header("Location: ".URL."estudiantes");
 																			
 				}
