@@ -1,9 +1,11 @@
+
 <div class="box-principal">
 <?php 
 	session_start();
 	$done = $_SESSION['done'];
 	if ($done)
 	{
+
 ?>
 <div class="alert alert-dismissible alert-success">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -13,6 +15,21 @@
 	unset($_SESSION['done']);	
 	}
 ?>
+
+
+
+<div class="box-principal">
+
+?>
+<div class="alert alert-dismissible alert-success">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Alumno</strong> correctamente registrado!
+</div>
+<?php	
+	unset($_SESSION['done']);	
+	}
+?>
+
 <h3 class="titulo">Vista del estudiante principal</h3>
 	<div class="panel panel-sucess">
 		<div class="panel-heading">
